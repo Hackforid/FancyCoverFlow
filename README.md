@@ -1,8 +1,24 @@
+
 FancyCoverFlow
 ==============
 
-THIS PROJECT IS NO LONGER MAINTAINED!
-=====================================
+This project is a fork version of FancyCoverFlow, that add gradle support.  
+
+You can use it by:
+
+```gradle
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
+}
+dependencies {
+    compile 'com.github.Hackforid:FancyCoverFlow:1.0'
+}
+```
+
+
 
 ## What is FancyCoverFlow?
 FancyCoverFlow is a flexible Android widget providing out of the box view transformations to give your app a unique look and feel. Curious about what FancyCoverFlow can do for you? Check out the FancyCoverFlow examples on Google Play.
@@ -23,8 +39,8 @@ You can also inflate FancyCoverFlow from XML:
 
 	<at.technikum.mti.fancycoverflow.FancyCoverFlow
 	        android:layout_width="match_parent"
-        	android:layout_height="match_parent"
+	    	android:layout_height="match_parent"
 	        fcf:maxRotation="45"
 	        fcf:unselectedAlpha="0.3"
-        	fcf:unselectedSaturation="0.0"
+	    	fcf:unselectedSaturation="0.0"
 	        fcf:unselectedScale="0.4" />
